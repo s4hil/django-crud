@@ -45,8 +45,11 @@
                             <td>{{d.email}}</td>
                             <td>{{d.phone}}</td>
                             <td>
-                                <button class="btn btn-warning">Edit</button>
-                                <button class="btn btn-danger">Delete</button>
+                                <a href="/update/{{ d.id }}">
+                                    <button class="btn btn-warning">Edit</button>
+                                </a>
+                                <a href="/delete/{{ d.id }}">
+                                    <button class="btn btn-danger">Delete</button>
                             </td>
                         </tr>
                     {% endfor %}
